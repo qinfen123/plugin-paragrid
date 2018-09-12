@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+  <id>com.fr.plugin.parameter.widget.grid</id>
+  <name><![CDATA[表格选择控件]]></name>
+  <active>yes</active>
+  <version>2.0</version>
+  <env-version>8.0</env-version>
+  <jartime>2015-08-09</jartime>
+  <vendor>路人丁</vendor>
+  <description><![CDATA[类似于下拉框但是弹出的选项是一个表格，可以比下拉框展示更加详细的信息]]></description>
+  <change-notes><![CDATA[可以在参数界面、表单、填报控件中使用该控件]]></change-notes>
+  <extra-core>
+    <JavaScriptFileHandler class="com.fr.plugin.widget.grid.JavaScriptFile"/>
+    <CssFileHandler class="com.fr.plugin.widget.grid.CssFile"/>
+  </extra-core>
+  <extra-report/>
+  <extra-designer>
+    <ParameterWidgetOptionProvider class="com.fr.plugin.widget.grid.GridImpl"/>
+    <FormWidgetOptionProvider class="com.fr.plugin.widget.grid.GridImpl"/>
+    <CellWidgetOptionProvider class="com.fr.plugin.widget.grid.CellGridImpl"/>
+  </extra-designer>
+</plugin>
